@@ -164,3 +164,11 @@ gsap.from(".contact-form form", {
   duration: 1,
   ease: "power4.out"
 });
+gsap.from(".portfolio-card", {
+  scrollTrigger: ".portfolio",
+  y: 80,
+  opacity: 0,
+  stagger: .15,
+  duration: 1.2,
+  ease: "power4.out"
+});
