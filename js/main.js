@@ -1,2 +1,1 @@
-// reserved for next animation upgrades
-
+console.log("Samroz Portfolio Loaded");
