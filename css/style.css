@@ -578,3 +578,9 @@ body::after {
   padding:8px 18px;
   border-radius:30px;
 }
+.top-nav{
+  backdrop-filter: blur(20px) saturate(140%);
+  box-shadow: 0 0 60px rgba(246,199,106,.25);
+  border:1px solid rgba(246,199,106,.15);
+}
+
