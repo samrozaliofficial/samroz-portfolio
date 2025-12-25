@@ -172,3 +172,15 @@ gsap.from(".portfolio-card", {
   duration: 1.2,
   ease: "power4.out"
 });
+gsap.utils.toArray(".reveal").forEach(el=>{
+  gsap.from(el,{
+    y:80,
+    opacity:0,
+    duration:1.4,
+    ease:"power4.out",
+    scrollTrigger:{
+      trigger:el,
+      start:"top 80%"
+    }
+  })
+})
