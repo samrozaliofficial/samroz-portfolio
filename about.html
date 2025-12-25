@@ -3,14 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>About — Samroz Ali</title>
+<title>About – Samroz Ali</title>
+
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
-<section class="about-hero">
-  <div class="about-wrap">
+<section class="about-section">
+  <div class="about-content">
+
     <span class="about-tag">ABOUT ME</span>
     <h1>Designing brands that sell —<br>not just look good.</h1>
 
@@ -25,19 +28,17 @@
       <li>✓ Conversion-focused layouts</li>
       <li>✓ Premium agency quality</li>
     </ul>
+
   </div>
 
-  <div class="about-photo">
-    <img src="images/profile.jpg">
-    <div class="photo-hover">Samroz Ali<br><small>Amazon Visual Designer</small></div>
+  <div class="about-image">
+    <img src="images/profile.jpg" alt="Samroz Ali">
+    <div class="about-hover">
+      Samroz Ali<br>
+      <small>Amazon Visual Designer</small>
+    </div>
   </div>
 </section>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
-<script>
-gsap.from(".about-wrap", {opacity:0, y:60, duration:1});
-gsap.from(".about-photo", {opacity:0, scale:.9, duration:1, delay:.2});
-</script>
 </body>
 </html>
