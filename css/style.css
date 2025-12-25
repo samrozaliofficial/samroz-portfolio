@@ -736,3 +736,83 @@ body::after {
 @media(max-width:900px){
   .about-inner{grid-template-columns:1fr}
 }
+/* your existing CSS above */
+
+/* ========================= */
+/* ABOUT SECTION */
+.about {
+  padding: 160px 8%;
+}
+
+.about-inner {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-tag {
+  color: #f6c76a;
+  letter-spacing: 0.2em;
+  font-size: 13px;
+}
+
+.about-text h2 {
+  font-size: 48px;
+  margin: 16px 0;
+}
+
+.about-text p {
+  opacity: .7;
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+
+.about-text ul li {
+  margin-bottom: 12px;
+  opacity: .8;
+}
+
+.about-image {
+  position: relative;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.about-image img {
+  width: 100%;
+  transition: .6s ease;
+}
+
+.about-image:hover img {
+  transform: scale(1.08);
+}
+
+.about-hover {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.9), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 28px;
+  opacity: 0;
+  transition: .4s ease;
+}
+
+.about-image:hover .about-hover {
+  opacity: 1;
+}
+
+.about-hover strong {
+  font-size: 20px;
+}
+
+.about-hover span {
+  font-size: 13px;
+  opacity: .6;
+}
+
+@media(max-width:900px){
+  .about-inner {grid-template-columns:1fr;}
+}
