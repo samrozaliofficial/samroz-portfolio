@@ -616,5 +616,28 @@ body::after {
   border:1px solid rgba(246,199,106,.22);
   z-index:999;
 }
+.nav-links a{
+  position:relative;
+  text-decoration:none;
+  color:#eee;
+  font-weight:500;
+  letter-spacing:.3px;
+}
+
+.nav-links a:after{
+  content:"";
+  position:absolute;
+  left:50%;
+  bottom:-6px;
+  width:0;
+  height:2px;
+  background:#f6c76a;
+  transition:.3s ease;
+}
+
+.nav-links a:hover:after{
+  width:100%;
+  left:0;
+}
 
 
