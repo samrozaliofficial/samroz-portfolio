@@ -368,3 +368,59 @@ body::after {
   50% { transform: scale(1.15); }
   100% { transform: scale(1); }
 }
+.portfolio {
+  padding: 120px 8%;
+  background: radial-gradient(circle at top left, #1a1407, #000);
+  text-align: center;
+}
+
+.portfolio h2 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  opacity: .6;
+  margin-bottom: 60px;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px,1fr));
+  gap: 30px;
+}
+
+.portfolio-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.portfolio-card img {
+  width: 100%;
+  transition: .6s ease;
+}
+
+.portfolio-card:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,.85), transparent);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 25px;
+}
+
+.overlay h3 {
+  margin: 0;
+}
+
+.overlay span {
+  font-size: 14px;
+  opacity: .7;
+}
