@@ -184,3 +184,10 @@ gsap.utils.toArray(".reveal").forEach(el=>{
     }
   })
 })
+document.querySelectorAll('.reveal').forEach(el=>{
+  new IntersectionObserver(entries=>{
+    if(entries[0].isIntersecting){
+      el.classList.add('active')
+    }
+  }).observe(el)
+})
