@@ -583,4 +583,31 @@ body::after {
   box-shadow: 0 0 60px rgba(246,199,106,.25);
   border:1px solid rgba(246,199,106,.15);
 }
+.nav-links a{
+  position:relative;
+}
+
+.nav-links a:after{
+  content:"";
+  position:absolute;
+  bottom:-6px;
+  left:50%;
+  width:0;
+  height:2px;
+  background:#f6c76a;
+  transition:.3s ease;
+}
+
+.nav-links a:hover:after{
+  width:100%;
+  left:0;
+}
+.top-nav{
+  animation: navFloat 6s ease-in-out infinite;
+}
+
+@keyframes navFloat{
+  0%,100%{ transform:translateX(-50%) translateY(0); }
+  50%{ transform:translateX(-50%) translateY(-4px); }
+}
 
