@@ -736,4 +736,9 @@ body::after {
 @media(max-width:900px){
   .about-inner{grid-template-columns:1fr}
 }
+.safe-zone {
+  position: relative;
+  z-index: 2;
+  isolation: isolate;
+}
 /* your existing CSS above */
