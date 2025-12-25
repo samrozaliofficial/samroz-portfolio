@@ -10,3 +10,20 @@ body{background:#050505;color:white}
 .contact{padding:100px}
 .contact input,.contact textarea{width:100%;margin:15px 0;padding:15px;background:#111;border:1px solid #333;color:white}
 .contact button{background:#f4c45a;color:black;padding:15px 40px;border:none;margin-top:10px}
+button, .btn{
+  position:relative;
+  overflow:hidden;
+}
+button::after{
+  content:"";
+  position:absolute;
+  top:0;
+  left:-100%;
+  width:100%;
+  height:100%;
+  background:linear-gradient(120deg,transparent,rgba(255,255,255,.4),transparent);
+  animation:shine 2.5s infinite;
+}
+@keyframes shine{
+  to{left:200%;}
+}
