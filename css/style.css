@@ -722,3 +722,82 @@ body::after {
   .about-hero{grid-template-columns:1fr;}
   .about-wrap h1{font-size:40px;}
 }
+.about-section{
+  min-height:100vh;
+  padding:140px 10%;
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  align-items:center;
+  gap:120px;
+  background:#0b0b0b;
+}
+
+.about-tag{
+  letter-spacing:4px;
+  color:#f5c77a;
+  font-size:13px;
+}
+
+.about-content h1{
+  font-size:54px;
+  line-height:1.1;
+  margin:20px 0;
+}
+
+.about-content p{
+  color:#bbb;
+  max-width:520px;
+  line-height:1.8;
+}
+
+.about-content ul{
+  list-style:none;
+  margin-top:30px;
+}
+
+.about-content li{
+  margin:12px 0;
+  color:#ddd;
+}
+
+.about-image{
+  position:relative;
+  border-radius:28px;
+  overflow:hidden;
+}
+
+.about-image img{
+  width:100%;
+  display:block;
+  transition:.6s ease;
+}
+
+.about-image:hover img{
+  transform:scale(1.1);
+}
+
+.about-hover{
+  position:absolute;
+  inset:0;
+  background:linear-gradient(to top, rgba(0,0,0,.9), transparent);
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-end;
+  padding:28px;
+  color:white;
+  opacity:0;
+  transition:.4s ease;
+}
+
+.about-image:hover .about-hover{
+  opacity:1;
+}
+
+@media(max-width:900px){
+  .about-section{
+    grid-template-columns:1fr;
+    padding:120px 8%;
+    gap:60px;
+  }
+  .about-content h1{font-size:38px;}
+}
